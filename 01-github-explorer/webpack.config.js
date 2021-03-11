@@ -30,9 +30,9 @@ module.exports = {
         use: "babel-loader", // integração babel + webpack
       },
       {
-        test: /\.css$/, // arquivos terminados em .jsx
+        test: /\.scss$/, // arquivos terminados em .jsx
         exclude: /node_modules/, // exclui esse diretorio
-        use: ["style-loader", "css-loader"], // integração babel + webpack
+        use: ["style-loader", "css-loader", "sass-loader"], // integração babel + webpack
       },
     ],
   },
